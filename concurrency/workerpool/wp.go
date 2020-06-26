@@ -1,5 +1,10 @@
 package main
 
+// this program demonstrate using worker pool to collectively do job
+// Run:
+// 		go run wp.go 15 5
+// #of jobs, 15; #workers 5
+
 import (
 	"fmt"
 	"os"
@@ -8,7 +13,6 @@ import (
 	"time"
 )
 
-// this program demonstrate using worker pool to collectively do job
 type Client struct {
 	id      int
 	integer int
